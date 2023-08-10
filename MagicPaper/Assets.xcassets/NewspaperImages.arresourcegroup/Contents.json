@@ -5,7 +5,16 @@
   },
   "resources" : [
     {
+      "filename" : "dumbledore.arreferenceimage"
+    },
+    {
       "filename" : "harrypotter.arreferenceimage"
+    },
+    {
+      "filename" : "hogwarts.arreferenceimage"
+    },
+    {
+      "filename" : "profsnape.arreferenceimage"
     }
   ]
 }

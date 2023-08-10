@@ -14,6 +14,9 @@
 		7F59BB312A84EF560011BAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB302A84EF560011BAF7 /* Assets.xcassets */; };
 		7F59BB342A84EF560011BAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB322A84EF560011BAF7 /* LaunchScreen.storyboard */; };
 		7F59BB3D2A8500B50011BAF7 /* harrypotter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB3C2A8500B50011BAF7 /* harrypotter.mp4 */; };
+		7F59BB3F2A850A110011BAF7 /* dumbledore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB3E2A850A110011BAF7 /* dumbledore.mp4 */; };
+		7F59BB412A850A180011BAF7 /* profsnape.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB402A850A180011BAF7 /* profsnape.mp4 */; };
+		7F59BB452A8510C30011BAF7 /* hogwarts.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F59BB442A8510C30011BAF7 /* hogwarts.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		7F59BB302A84EF560011BAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F59BB332A84EF560011BAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F59BB3C2A8500B50011BAF7 /* harrypotter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = harrypotter.mp4; sourceTree = "<group>"; };
+		7F59BB3E2A850A110011BAF7 /* dumbledore.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dumbledore.mp4; sourceTree = "<group>"; };
+		7F59BB402A850A180011BAF7 /* profsnape.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = profsnape.mp4; sourceTree = "<group>"; };
+		7F59BB442A8510C30011BAF7 /* hogwarts.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hogwarts.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				7F59BB302A84EF560011BAF7 /* Assets.xcassets */,
 				7F59BB322A84EF560011BAF7 /* LaunchScreen.storyboard */,
 				7F59BB3C2A8500B50011BAF7 /* harrypotter.mp4 */,
+				7F59BB3E2A850A110011BAF7 /* dumbledore.mp4 */,
+				7F59BB402A850A180011BAF7 /* profsnape.mp4 */,
+				7F59BB442A8510C30011BAF7 /* hogwarts.mp4 */,
 			);
 			path = MagicPaper;
 			sourceTree = "<group>";
@@ -127,7 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F59BB2A2A84EF540011BAF7 /* art.scnassets in Resources */,
+				7F59BB412A850A180011BAF7 /* profsnape.mp4 in Resources */,
+				7F59BB452A8510C30011BAF7 /* hogwarts.mp4 in Resources */,
 				7F59BB342A84EF560011BAF7 /* LaunchScreen.storyboard in Resources */,
+				7F59BB3F2A850A110011BAF7 /* dumbledore.mp4 in Resources */,
 				7F59BB3D2A8500B50011BAF7 /* harrypotter.mp4 in Resources */,
 				7F59BB312A84EF560011BAF7 /* Assets.xcassets in Resources */,
 				7F59BB2F2A84EF540011BAF7 /* Main.storyboard in Resources */,

@@ -13,6 +13,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var fileName : String = ""
+    
+    var videoNode = SKVideoNode(fileNamed: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +35,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         configuration.trackingImages = trackedImages
         
-        configuration.maximumNumberOfTrackedImages = 1
+        configuration.maximumNumberOfTrackedImages = 4
         
 
         // Run the view's session
@@ -53,7 +57,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         if let imageAnchor = anchor as? ARImageAnchor {
             
-            let videoNode = SKVideoNode(fileNamed: "harrypotter.mp4")
+            switch imageAnchor.referenceImage.name {
+            case "harrypotter":
+                fileName = "harrypotter.mp4"
+            case "dumbledore":
+                fileName = "dumbledore.mp4"
+            case "profsnape":
+                fileName = "profsnape.mp4"
+            case "hogwarts":
+                fileName = "hogwarts.mp4"
+            default:
+                print("Image not found.")
+            }
+        
+            videoNode = SKVideoNode(fileNamed: fileName)
             
             videoNode.play()
             
@@ -79,6 +96,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         return node
         
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        
+        guard let imageAnchor = anchor as? ARImageAnchor else {return}
+        if imageAnchor.isTracked {
+            videoNode.play()
+        } else {
+            videoNode.pause()
+        }
     }
 
 }
